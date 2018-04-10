@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/holo_light_blue"
+    tools:context="com.example.hp.kilimo_bora.BeanDiseasesFragment">
+
+
+    <ListView
+        android:id="@+id/viewer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/Bean_disease_arrays"
+        android:prompt="@string/Bean_diseases" />
+
+</RelativeLayout>

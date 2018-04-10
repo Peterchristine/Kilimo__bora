@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Kilimo_Bora</string>
+
+
+    <string name="cereals">Choose a cereal</string>
+
+    <string-array name="cereal_arrays">
+        <item>Maize</item>
+        <item>Wheat</item>
+        <item>barley</item>
+        <item>rice</item>
+        <item>sorghum</item>
+
+    </string-array>
+
+    <string name="legumes">Choose a legume</string>
+
+    <string-array name="legume_arrays">
+        <item>Beans</item>
+        <item>Peas</item>
+        <item>Lentils</item>
+        <item>Clover</item>
+    </string-array>
+
+
+    <string name="tubers">Choose a tuber</string>
+
+    <string-array name="tuber_arrays">
+        <item>irish Potatoes</item>
+        <item>Sweet Potatoes</item>
+    </string-array>
+
+
+    <string name="Bean_diseases">pop legume diseases</string>
+
+    <string-array name="Bean_disease_arrays">
+        <item>Anthracnose</item>
+        <item>Black root rot</item>
+        <item>Southern Blight</item>
+    </string-array>
+
+    <string name="Irish_Potato_diseases">pop legume diseases</string>
+
+    <string-array name="Irish_Potato_disease_arrays">
+        <item>Bacterial_wilt </item>
+        <item>Bacterial_soft_rot</item>
+        <item>Late_Blight</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="AppDescription"> Kilimo Bora brings you information on the most favourable crops to grow in your region coupled with the diseases that affect those crops.
+        It also will provide you with the best mitigation methods, Say pesticides and insecticide suggestions that you could use to curb the same.
+    </string>
+
+
+</resources>
+
