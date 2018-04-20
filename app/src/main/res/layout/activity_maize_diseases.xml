@@ -4,26 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/holo_light_blue"
-    tools:context="com.example.hp.kilimo_bora.legumeslist">
-
+    tools:context="com.example.hp.kilimo_bora.MaizeDiseases">
     <TextView
         android:layout_width="fill_parent"
-        android:id="@+id/textviewlegumes"
+        android:id="@+id/textviewmaize"
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:text="Legumes"/>
-
+        android:text="@string/Maize_diseases"/>
 
     <ListView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/listview1"
-    android:entries="@array/legume_arrays"
-    android:prompt="@string/legumes"
-    android:layout_below="@+id/textviewlegumes"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MaizeListview"
+        android:layout_below="@+id/textviewmaize"
+        android:entries="@array/Maize_disease_arrays"
+        android:prompt="@string/Maize_diseases">
 
+    </ListView>
 
 
 

@@ -1,74 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.hp.kilimo_bora.Activity3">
 
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="200dp"
+            android:id="@+id/buttonlegumes"
+            android:adjustViewBounds="true"
+            android:src="@drawable/legumes"
+            android:layout_height="200dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Legumes"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="200dp"
+            android:id="@+id/buttoncereals"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/cereals"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Cereals"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="200dp"
+                android:adjustViewBounds="true"
+                android:id="@+id/buttontubers"
+                android:src="@drawable/tubers"
+                android:layout_height="200dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Tubers"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/buttonothercrops"
+                android:adjustViewBounds="true"
+                android:src="@drawable/othercrops"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Other crops"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
 
-    <Button
-
-        android:id="@+id/buttoncereals"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignLeft="@+id/buttonlegumes"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/buttonlegumes"
-        android:layout_marginBottom="60dp"
-        android:background="@drawable/cereals"
-        android:gravity="center|bottom"
-        android:text="Cereals"
-        android:textStyle="bold" />
-
-
-    <Button
-
-        android:id="@+id/buttontubers"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignBottom="@+id/buttonlegumes"
-        android:layout_alignEnd="@+id/buttonothercrops"
-        android:layout_alignRight="@+id/buttonothercrops"
-        android:layout_marginLeft="10dp"
-        android:background="@drawable/tubers"
-        android:gravity="center|bottom"
-        android:text="Tubers"
-        android:textStyle="bold" />
-
-
-    <Button
-
-        android:id="@+id/buttonlegumes"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="13dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="11dp"
-        android:background="@drawable/legume"
-        android:text="Legumes"
-        android:gravity="center|bottom"
-        android:textStyle="bold" />
-
-    <Button
-
-        android:id="@+id/buttonothercrops"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/buttoncereals"
-        android:layout_marginEnd="11dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="11dp"
-        android:background="@drawable/othercrops"
-        android:gravity="center|bottom"
-        android:text="Other Crops"
-        android:textStyle="bold" />
-
-
-</RelativeLayout>
+</LinearLayout>

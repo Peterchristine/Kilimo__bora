@@ -1,25 +1,24 @@
 package com.example.hp.kilimo_bora;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.Spinner;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class Activity4 extends Activity {
-    private Spinner spinner1, spinner2;
+public class Cerealslist extends Activity {
+   /* private Spinner spinner1, spinner2;
     private Button btnSubmit;
 
    /* @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_4);
+        setContentView(R.layout.activity_cerealslist);
 
         Databasehelper dbhelper = new Databasehelper(this);
            dbhelper.insertData("Maize");
@@ -34,14 +33,55 @@ public class Activity4 extends Activity {
     }*/
 
 
-
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_4);
+        setContentView(R.layout.activity_cerealslist);
 
-        addItemsOnSpinner2();
+        final ArrayList<String> fileNames = new ArrayList<String>();
+        fileNames.add("Maize");
+        fileNames.add("Wheat");
+        fileNames.add("Barley");
+        fileNames.add("Rice");
+        fileNames.add("Sorghum");
+
+
+        ListView listView = (ListView) findViewById(R.id.cerealslistview);
+        ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, fileNames);
+        listView.setAdapter(listAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        (String) arg0.getItemAtPosition(position), Toast.LENGTH_SHORT);
+
+            }
+
+
+        });
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
+
+                switch (position) {
+                    case 0:
+                        Intent myIntent = new Intent(getBaseContext(), MaizeDiseases.class);
+                        startActivity(myIntent);
+                        break;
+                    case 1:
+                        Intent myintent = new Intent(getBaseContext(), WheatDiseases.class);
+                        startActivity(myintent);
+                        break;
+                }
+            }
+        });
+    }
+}
+
+
+      /*  addItemsOnSpinner2();
         addListenerOnButton();
         addListenerOnSpinnerItemSelection();
     }
@@ -77,13 +117,12 @@ public class Activity4 extends Activity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(Activity4.this,
+                Toast.makeText(Cerealslist.this,
                         "OnClickListener : " +
                                 "\nSpinner 1 : "+ String.valueOf(spinner1.getSelectedItem()) +
                                 "\nSpinner 2 : "+ String.valueOf(spinner2.getSelectedItem()),
                         Toast.LENGTH_SHORT).show();
             }
 
-        });
-    }
-}
+        });*/
+

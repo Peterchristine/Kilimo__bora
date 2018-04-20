@@ -4,23 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/tubers"
-    tools:context="com.example.hp.kilimo_bora.Tuberslist">
-
+    tools:context="com.example.hp.kilimo_bora.BeanDiseases">
     <TextView
         android:layout_width="fill_parent"
-        android:id="@+id/textviewtubers"
-        android:layout_height="wrap_content"
+        android:id="@+id/textviewbeans"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:text="Tubers"/>
+        android:layout_height="wrap_content"
+        android:text="@string/Bean_diseases"/>
 
     <ListView
+        android:id="@+id/BeansListview"
         android:layout_width="wrap_content"
+        android:layout_below="@+id/textviewbeans"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textviewtubers"
-        android:id="@+id/listview"
-        android:entries="@array/tuber_arrays"
-        android:prompt="@string/tubers" />
+        android:entries="@array/Bean_disease_arrays"
+        android:prompt="@string/Bean_diseases" />
 
-   </RelativeLayout>
+
+</RelativeLayout>

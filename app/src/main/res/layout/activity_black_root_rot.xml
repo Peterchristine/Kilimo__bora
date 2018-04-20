@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.kilimo_bora.BlackRootRot">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:id="@+id/textviewblackrootrot"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:text="Sample Bean Crop on Black Root Rot"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewblackrootrot"
+        android:id="@+id/anthracnoseimageview"
+        android:background="@drawable/blackrootrot_on_beans"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/blackrootrotimageview">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:id="@+id/mitigation"
+            android:textStyle="bold"
+            android:text="@string/Mitigation"
+            android:layout_below="@id/blackrootrotimageview"
+            android:layout_alignParentBottom="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:text="@string/mitigationbeans"
+            android:layout_below="@id/mitigation" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

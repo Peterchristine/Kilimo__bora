@@ -2,13 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.hp.kilimo_bora">
 
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme1">
         <activity android:name=".Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,12 +19,48 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity2" />
-        <activity android:name=".Activity3" />
-        <activity android:name=".Activity4" />
-        <activity android:name=".legumeslist" />
-        <activity android:name=".Tuberslist" />
-        <activity android:name=".IrishPotatoDiseases"></activity>
+        <activity
+            android:name=".Activity2"
+            android:parentActivityName=".Main"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity3"
+            android:parentActivityName=".Activity2"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Cerealslist"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".legumeslist"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Tuberslist"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".IrishPotatoDiseases"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MaizeDiseases"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".WheatDiseases"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".BeanDiseases"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".LeafMosaicFragment"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".SmurtFragment" />
+        <activity android:name=".StemRustFragment" />
+        <activity android:name=".LeafRustFragment" />
+        <activity android:name=".YellowRustFragment" />
+        <activity android:name=".BacterialWiltFragment" />
+        <activity android:name=".BacterialSoftRotFragment" />
+        <activity android:name=".LateBlightFragment" />
+        <activity android:name=".Anthracnose" />
+        <activity android:name=".BlackRootRot" />
+        <activity android:name=".LethalNecrosis"></activity>
     </application>
 
 </manifest>

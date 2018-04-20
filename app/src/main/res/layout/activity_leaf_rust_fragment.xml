@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.kilimo_bora.LeafRustFragment">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:id="@+id/textviewleafrust"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Sample Wheat Crop on Leaf Rust"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewleafrust"
+        android:id="@+id/leafrustimageview"
+        android:background="@drawable/leafrustonwheat"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leafrustimageview">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/mitigation"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="@string/Mitigation"
+            android:layout_below="@id/leafrustimageview"
+            android:layout_alignParentBottom="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:text="@string/mitigationstemrust"
+            android:layout_below="@id/mitigation" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

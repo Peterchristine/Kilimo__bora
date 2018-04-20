@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.kilimo_bora.SmurtFragment">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:id="@+id/textviewsmurt"
+        android:layout_height="wrap_content"
+        android:text="Sample Maize Crop on Smurt"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewsmurt"
+        android:id="@+id/smurtimageview"
+        android:background="@drawable/smurt_on_maize"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/smurtimageview">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/mitigation"
+        android:textStyle="bold"
+        android:text="@string/Mitigation"
+        android:layout_below="@id/smurtimageview"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/mitigation"
+        android:layout_below="@id/mitigation" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
