@@ -50,6 +50,10 @@ public class BeanDiseases extends AppCompatActivity {
                         Intent Intent = new Intent(getBaseContext(),BlackRootRot.class);
                         startActivity(Intent);
                         break;
+                    case 2:
+                        Intent Iintent = new Intent(getBaseContext(),SouthernBlight.class);
+                        startActivity(Iintent);
+                        break;
 
                 }
             }

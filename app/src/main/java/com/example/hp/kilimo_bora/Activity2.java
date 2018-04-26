@@ -40,9 +40,12 @@ public class Activity2 extends AppCompatActivity {
                 else
                     Toast.makeText(getBaseContext(),
                             "Please enter both phone number and message.",
+
                             Toast.LENGTH_SHORT).show();
+
             }
         });*/
+
 
 
         ViewCrops.setOnClickListener(new View.OnClickListener() {
@@ -51,17 +54,40 @@ public class Activity2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(getApplicationContext(), "view more types of crops",
-                        Toast.LENGTH_SHORT);
-                Intent myIntent = new Intent(getBaseContext(), Activity3.class);
-                startActivity(myIntent);
+
+
+                if(subcounty.getText().toString().toLowerCase().equals("njoro"))
+
+
+                {
+                    Intent myIntent = new Intent(getBaseContext(), Activity3.class);
+                    startActivity( myIntent);
+                } else  if(subcounty.getText().toString().toLowerCase().equals("")){
+                    Toast.makeText(getApplicationContext(), "You did not enter anything.Please enter your subcounty",
+                            Toast.LENGTH_SHORT).show();
+                    // getString(R.string.Action);
+
+
+                }
+        else{
+                    Toast.makeText(getApplicationContext(), "Information to be updated soon. try Njoro",
+                            Toast.LENGTH_SHORT).show();
+                    // getString(R.string.Action);
+                }
             }
+
+            //   Toast.makeText(getApplicationContext(), "view more types of crops",
+            //     Toast.LENGTH_SHORT);
+            //  Intent myIntent = new Intent(getBaseContext(), Activity3.class);
+            //   startActivity(myIntent);
+            // }
 
 
         });
-
-
     }
+}
+
+            // }
    /* private void sendSMS(String phoneNumber, String message)
     {
         PendingIntent pi = PendingIntent.getActivity(this, 0,
@@ -76,21 +102,8 @@ public class Activity2 extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }*/
 
-    public void enterSubCounty(String subcounty) {
-
-        if (subcounty.equals("Njoro")) ;
-
-        {
-            Intent viewcrops = new Intent(getBaseContext(), Activity3.class);
+         //   public void enterSubCounty(String subcounty) {
 
 
-            {
-
-                getString(R.string.Action);
-
-
-            }
-
-        }
-    }
-}
+          //  }
+        //}

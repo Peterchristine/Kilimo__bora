@@ -32,7 +32,6 @@ public class legumeslist extends FragmentActivity {
 
         final ArrayList<String> fileNames = new ArrayList<String>();
         fileNames.add("Beans");
-        fileNames.add("Peas");
         fileNames.add("Clovers");
         fileNames.add("Lentils");
 

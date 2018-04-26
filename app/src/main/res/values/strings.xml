@@ -83,6 +83,12 @@
         It also will provide you with the best mitigation methods, Say pesticides and insecticide suggestions that you could use to curb the same.
     </string>
     <string name="Action">Information will be updated soon</string>
+    <string name="title_activity_counties">counties</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 
 
 </resources>

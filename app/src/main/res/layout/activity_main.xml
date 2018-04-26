@@ -25,6 +25,7 @@
         android:textAlignment="center"
         android:text="KILIMO BORA"
         android:typeface="normal"
+        android:textStyle="bold"
         android:layout_height="wrap_content" />
     <RelativeLayout
         android:layout_width="fill_parent"

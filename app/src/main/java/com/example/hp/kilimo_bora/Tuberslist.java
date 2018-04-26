@@ -25,6 +25,7 @@ public class Tuberslist extends Activity {
         final ArrayList<String> mylist= new ArrayList<String>();
 
         mylist.add("Irish Potatoes");
+        mylist.add("Carrots");
         mylist.add("Sweet Potatoes");
 
 

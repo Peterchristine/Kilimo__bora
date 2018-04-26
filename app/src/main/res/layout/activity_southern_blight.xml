@@ -1,49 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.hp.kilimo_bora.BacterialSoftRotFragment">
+    android:orientation="vertical"
+    tools:context="com.example.hp.kilimo_bora.SouthernBlight">
+
+
     <TextView
         android:layout_width="fill_parent"
-        android:id="@+id/textviewsoftrot"
-        android:textSize="20dp"
-        android:textStyle="bold"
+        android:id="@+id/textviewsouthernblight"
         android:layout_height="wrap_content"
-        android:text="Sample Potato Crop on Soft Rot"/>
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Sample Bean Crop on Southern Blight"/>
 
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="300dp"
-        android:scaleType="fitXY"
-        android:layout_below="@id/textviewsoftrot"
-        android:id="@+id/softrotimageview"
-        android:background="@drawable/softrotonirishpotato"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewsouthernblight"
+        android:id="@+id/southernblightimageview"
+        android:background="@drawable/southernblight_in_beans"
         />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@+id/softrotimageview">
+        android:layout_below="@+id/southernblightimageview">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/mitigation"
-            android:textSize="20dp"
             android:textStyle="bold"
+            android:textSize="20dp"
             android:text="@string/Mitigation"
-            android:layout_below="@id/softrotimageview"
+            android:layout_below="@id/southernblightimageview"
             android:layout_alignParentBottom="true"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="20dp"
-            android:text="@string/mitigationpotato"
+            android:text="@string/mitigationbeans"
             android:layout_below="@id/mitigation" />
 
     </LinearLayout>
 
 
-</RelativeLayout>
+
+</LinearLayout>

@@ -60,7 +60,8 @@
         <activity android:name=".LateBlightFragment" />
         <activity android:name=".Anthracnose" />
         <activity android:name=".BlackRootRot" />
-        <activity android:name=".LethalNecrosis"></activity>
+        <activity android:name=".LethalNecrosis" />
+        <activity android:name=".SouthernBlight" />
     </application>
 
 </manifest>

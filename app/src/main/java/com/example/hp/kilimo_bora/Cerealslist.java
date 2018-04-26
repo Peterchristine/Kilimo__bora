@@ -42,7 +42,6 @@ public class Cerealslist extends Activity {
         fileNames.add("Maize");
         fileNames.add("Wheat");
         fileNames.add("Barley");
-        fileNames.add("Rice");
         fileNames.add("Sorghum");
 
 
