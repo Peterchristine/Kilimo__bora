@@ -22,7 +22,6 @@ public class Main extends AppCompatActivity
         Explore = (Button) findViewById(R.id.buttonexplore);
         Explore.setOnClickListener(new View.OnClickListener() {
 
-           // String msg = "learn more about diseases and pests";
 
             @Override
             public void onClick(View v) {

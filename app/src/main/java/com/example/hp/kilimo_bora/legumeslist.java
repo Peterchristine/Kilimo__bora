@@ -23,7 +23,7 @@ import java.util.List;
 
 public class legumeslist extends FragmentActivity {
 
-   ListView myview;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +32,12 @@ public class legumeslist extends FragmentActivity {
 
         final ArrayList<String> fileNames = new ArrayList<String>();
         fileNames.add("Beans");
-        fileNames.add("Peas");
         fileNames.add("Clovers");
         fileNames.add("Lentils");
 
 
 
-        final ListView listView = (ListView) findViewById(R.id.listview1);
+        ListView listView = (ListView) findViewById(R.id.listview1);
         ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,fileNames );
         listView.setAdapter(listAdapter);
 
@@ -59,13 +58,10 @@ public class legumeslist extends FragmentActivity {
 
                 switch (position) {
                     case 0:
-                        Intent myIntent = new Intent(getBaseContext(),BeanDiseasesFragment.class);
+                        Intent myIntent = new Intent(getBaseContext(),BeanDiseases.class);
                         startActivity(myIntent);
                         break;
-                    case 1:
-                        Intent myintent = new Intent(getBaseContext(), Activity2.class);
-                        startActivity(myintent);
-                        break;
+
                 }
             }
             });

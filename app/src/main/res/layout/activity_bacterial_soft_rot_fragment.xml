@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.kilimo_bora.BacterialSoftRotFragment">
+    <TextView
+        android:layout_width="fill_parent"
+        android:id="@+id/textviewsoftrot"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Sample Potato Crop on Soft Rot"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/textviewsoftrot"
+        android:id="@+id/softrotimageview"
+        android:background="@drawable/softrotonirishpotato"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/softrotimageview">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/mitigation"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="@string/Mitigation"
+            android:layout_below="@id/softrotimageview"
+            android:layout_alignParentBottom="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:text="@string/mitigationpotato"
+            android:layout_below="@id/mitigation" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -4,14 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/holo_light_blue"
+    android:background="@drawable/tubers_wallpaper"
     tools:context="com.example.hp.kilimo_bora.Tuberslist">
 
+    <TextView
+        android:layout_width="fill_parent"
+        android:id="@+id/textviewtubers"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Tubers"/>
 
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/textviewtubers"
         android:id="@+id/listview"
         android:entries="@array/tuber_arrays"
         android:prompt="@string/tubers" />

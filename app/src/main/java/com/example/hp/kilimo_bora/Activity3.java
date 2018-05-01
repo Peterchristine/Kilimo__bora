@@ -6,23 +6,23 @@ android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+import android.widget.ImageView;
 
 public class Activity3 extends AppCompatActivity  {
-  Button Cereals;
-  Button Legumes;
-  Button Tubers;
-  Button OtherCrops;
+  ImageView Cereals;
+  ImageView Legumes;
+  ImageView Tubers;
+  ImageView OtherCrops;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_3);
 
-        Cereals = (Button) findViewById(R.id.buttoncereals);
-        Legumes = (Button) findViewById(R.id.buttonlegumes);
-        Tubers = (Button) findViewById(R.id.buttontubers);
-        OtherCrops = (Button) findViewById(R.id.buttonothercrops);
+     Cereals = (ImageView) findViewById(R.id.buttoncereals);
+        Legumes = (ImageView) findViewById(R.id.buttonlegumes);
+        Tubers = (ImageView) findViewById(R.id.buttontubers);
+        OtherCrops = (ImageView) findViewById(R.id.buttonothercrops);
 
 
         Cereals.setOnClickListener(new View.OnClickListener()  {
@@ -31,22 +31,11 @@ public class Activity3 extends AppCompatActivity  {
             @Override
             public void onClick(View view) {
 
-                Intent myIntent  = new Intent(getBaseContext(),Activity4.class);
+                Intent myIntent  = new Intent(getBaseContext(),Cerealslist.class);
                 startActivity(myIntent);
             }
         });
 
-
-       OtherCrops.setOnClickListener(new View.OnClickListener()  {
-
-
-            @Override
-            public void onClick(View view) {
-                Intent myIntent  = new Intent(getBaseContext(),Activity4.class);
-                startActivity(myIntent);
-
-            }
-        });
 
         Tubers.setOnClickListener(new View.OnClickListener()  {
 
@@ -72,5 +61,7 @@ public class Activity3 extends AppCompatActivity  {
 
             }
         });
+
+
     }
 }

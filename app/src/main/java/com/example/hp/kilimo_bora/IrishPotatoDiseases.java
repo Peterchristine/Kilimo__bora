@@ -29,5 +29,29 @@ public class IrishPotatoDiseases extends Activity {
 
 
 
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
+
+                switch (position) {
+                    case 0:
+                        Intent myIntent = new Intent(getBaseContext(),BacterialWiltFragment.class);
+                        startActivity(myIntent);
+                        break;
+                    case 1:
+                        Intent Intent = new Intent(getBaseContext(),BacterialSoftRotFragment.class);
+                        startActivity(Intent);
+                        break;
+                    case 2:
+                        Intent Inntent = new Intent(getBaseContext(),LateBlightFragment.class);
+                        startActivity(Inntent);
+                        break;
+
+
+
+                }
+            }
+        });
     }
 }

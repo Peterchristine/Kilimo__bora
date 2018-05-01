@@ -5,10 +5,14 @@
     android:padding="10dp"
     android:background="@color/holo_light_blue"
     tools:context="com.example.hp.kilimo_bora.BeanDiseasesFragment">
-
-
+    <TextView
+        android:layout_width="fill_parent"
+        android:id="@+id/textviewbeans"
+        android:layout_height="wrap_content"
+        android:text="@string/Bean_diseases"/>
     <ListView
         android:id="@+id/viewer"
+        android:layout_below="@+id/textviewbeans"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:entries="@array/Bean_disease_arrays"

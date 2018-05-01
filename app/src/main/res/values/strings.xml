@@ -2,7 +2,7 @@
     <string name="app_name">Kilimo_Bora</string>
 
 
-    <string name="cereals">Choose a cereal</string>
+    <string name="cereals">Cereals</string>
 
     <string-array name="cereal_arrays">
         <item>Maize</item>
@@ -13,7 +13,7 @@
 
     </string-array>
 
-    <string name="legumes">Choose a legume</string>
+    <string name="legumes">Legumes</string>
 
     <string-array name="legume_arrays">
         <item>Beans</item>
@@ -23,7 +23,7 @@
     </string-array>
 
 
-    <string name="tubers">Choose a tuber</string>
+    <string name="tubers">Tubers</string>
 
     <string-array name="tuber_arrays">
         <item>irish Potatoes</item>
@@ -31,7 +31,24 @@
     </string-array>
 
 
-    <string name="Bean_diseases">pop legume diseases</string>
+    <string name="Maize_diseases">Maize diseases</string>
+
+    <string-array name="Maize_disease_arrays">
+        <item>Lethal Necrosis</item>
+        <item>leaf mosaic</item>
+        <item>Smurt</item>
+    </string-array>
+
+    <string name="Wheat_diseases"> Wheat diseases</string>
+
+    <string-array name="Wheat_disease_arrays">
+        <item>Stem Rust</item>
+        <item>Leaf Rust</item>
+        <item>Yellow Rust</item>
+    </string-array>
+
+
+    <string name="Bean_diseases">Bean diseases</string>
 
     <string-array name="Bean_disease_arrays">
         <item>Anthracnose</item>
@@ -39,19 +56,39 @@
         <item>Southern Blight</item>
     </string-array>
 
-    <string name="Irish_Potato_diseases">pop legume diseases</string>
+    <string name="Irish_Potato_diseases">Irish Potato diseases</string>
 
     <string-array name="Irish_Potato_disease_arrays">
         <item>Bacterial_wilt </item>
         <item>Bacterial_soft_rot</item>
         <item>Late_Blight</item>
     </string-array>
+    <string name="Mitigation">Mitigation Plan:</string>
+    <string name="mitigation"> uproot the affected crops and burn and use certified seeds.  </string>
+    <string name="mitigationstemrust"> use resistant Wheat varieties such as Korongo.Spray fungicides such as; <br />
+    Prosaro,Abacus and Native. Ensure to patrol the farm before planting.
+    </string>
+
+    <string name="mitigationpotato"> use certified seeds and apply crop rotation. Ensure to also patrol the farm before planting.
+
+
+    </string>
+
+    <string name="mitigationbeans"> Use certified seeds and spray fungicides . Perform rotation and uproot the affected crops to prevent the spread. </string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="MitigationLethal">Spray insecticides to prevent occurrence. No fungicide is in existence as per now.</string>
     <string name="AppDescription"> Kilimo Bora brings you information on the most favourable crops to grow in your region coupled with the diseases that affect those crops.
         It also will provide you with the best mitigation methods, Say pesticides and insecticide suggestions that you could use to curb the same.
     </string>
+    <string name="Action">Information will be updated soon</string>
+    <string name="title_activity_counties">counties</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 
 
 </resources>

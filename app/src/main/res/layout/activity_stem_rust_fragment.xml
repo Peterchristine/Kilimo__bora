@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.kilimo_bora.StemRustFragment">
+    <TextView
+        android:layout_width="fill_parent"
+        android:id="@+id/textviewstemrust"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Sample Wheat Crop on Stem Rust"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewstemrust"
+        android:id="@+id/stemrustimageview"
+        android:background="@drawable/stemrust_on_wheat"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stemrustimageview">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/mitigation"
+            android:textStyle="bold"
+            android:text="@string/Mitigation"
+            android:layout_below="@id/stemrustimageview"
+            android:layout_alignParentBottom="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:text="@string/mitigationstemrust"
+            android:layout_below="@id/mitigation" />
+
+    </LinearLayout>
+
+</RelativeLayout>

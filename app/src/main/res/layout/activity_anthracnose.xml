@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.kilimo_bora.Anthracnose">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:textSize="20dp"
+        android:id="@+id/textviewanthracnose"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Sample Bean Crop on Anthracnose"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewanthracnose"
+        android:id="@+id/anthracnoseimageview"
+        android:background="@drawable/anthracnose_on_beans"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/anthracnoseimageview">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/mitigation"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="@string/Mitigation"
+            android:layout_below="@id/anthracnoseimageview"
+            android:layout_alignParentBottom="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="match_parent"
+            android:text="@string/mitigationbeans"
+            android:layout_below="@id/mitigation" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

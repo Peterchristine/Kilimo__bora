@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/maize_wallpaper"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.kilimo_bora.Cerealslist">
+
+   <TextView
+       android:layout_width="fill_parent"
+       android:id="@+id/textviewcereals"
+       android:layout_height="wrap_content"
+       android:textSize="20dp"
+       android:textStyle="bold"
+       android:text="Cereals"/>
+
+
+   <ListView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/cerealslistview"
+       android:layout_below="@+id/textviewcereals"
+       android:entries="@array/cereal_arrays"
+       android:prompt="@string/cereals">
+
+   </ListView>
+
+</RelativeLayout>
