@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Kilimo_Bora.iml" filepath="$PROJECT_DIR$/Kilimo_Bora.iml" />
       <module fileurl="file://$PROJECT_DIR$/Kilimo__bora.iml" filepath="$PROJECT_DIR$/Kilimo__bora.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
