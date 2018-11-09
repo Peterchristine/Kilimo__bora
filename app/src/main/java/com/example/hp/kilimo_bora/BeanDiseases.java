@@ -1,8 +1,10 @@
 package com.example.hp.kilimo_bora;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -12,6 +14,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class BeanDiseases extends AppCompatActivity {
+    private ActionBar tool_bar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +24,11 @@ public class BeanDiseases extends AppCompatActivity {
         file.add("Anthracnose");
         file.add("Black root rot");
         file.add("Southern Blight");
-
+        tool_bar=getSupportActionBar();
+        if(tool_bar!=null){
+            tool_bar.setDisplayHomeAsUpEnabled(true);
+            tool_bar.setDisplayShowHomeEnabled(true);
+        }
         ListView beanlistView = (ListView) findViewById(R.id.BeansListview);
         ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,file);
         beanlistView .setAdapter(listAdapter);
@@ -58,6 +65,18 @@ public class BeanDiseases extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                super.onBackPressed();
+                return true;
+            default:
+
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
 

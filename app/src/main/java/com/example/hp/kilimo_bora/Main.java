@@ -27,7 +27,7 @@ public class Main extends AppCompatActivity
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "learn more about diseases and pests"
           , Toast.LENGTH_SHORT);
-                Intent intent  = new Intent(getBaseContext(),Activity2.class);
+                Intent intent  = new Intent(getBaseContext(),Activity3.class);
                 startActivity(intent);
             }
 

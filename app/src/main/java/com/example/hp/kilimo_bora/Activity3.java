@@ -80,8 +80,7 @@ public class Activity3 extends AppCompatActivity  {
         }else{
             return super.onOptionsItemSelected(item);
         }
-
-    }
+        }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -5,8 +5,10 @@ import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.ListViewCompat;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -21,9 +23,11 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 import java.util.List;
 
-public class legumeslist extends FragmentActivity {
+public class legumeslist extends AppCompatActivity {
 
 
+
+    private ActionBar tool_bar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +39,11 @@ public class legumeslist extends FragmentActivity {
         fileNames.add("Clovers");
         fileNames.add("Lentils");
 
-
+        tool_bar=getSupportActionBar();
+        if(tool_bar!=null){
+            tool_bar.setDisplayHomeAsUpEnabled(true);
+            tool_bar.setDisplayShowHomeEnabled(true);
+        }
 
         ListView listView = (ListView) findViewById(R.id.listview1);
         ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,fileNames );
@@ -65,5 +73,17 @@ public class legumeslist extends FragmentActivity {
                 }
             }
             });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                super.onBackPressed();
+                return true;
+            default:
+
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

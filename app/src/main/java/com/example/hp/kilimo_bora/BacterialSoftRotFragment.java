@@ -1,13 +1,34 @@
 package com.example.hp.kilimo_bora;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 public class BacterialSoftRotFragment extends AppCompatActivity {
+    private ActionBar tool_bar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bacterial_soft_rot_fragment);
+        tool_bar=getSupportActionBar();
+        if(tool_bar!=null){
+            tool_bar.setDisplayHomeAsUpEnabled(true);
+            tool_bar.setDisplayShowHomeEnabled(true);
+        }
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                super.onBackPressed();
+                return true;
+            default:
+
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
