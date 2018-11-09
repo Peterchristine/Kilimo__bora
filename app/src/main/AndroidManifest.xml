@@ -20,11 +20,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme1">
         <activity android:name=".Main">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".Activity2"
@@ -58,17 +58,28 @@
         <activity
             android:name=".LeafMosaicFragment"
             android:theme="@style/AppTheme" />
-        <activity android:name=".SmurtFragment" />
-        <activity android:name=".StemRustFragment" />
-        <activity android:name=".LeafRustFragment" />
-        <activity android:name=".YellowRustFragment" />
-        <activity android:name=".BacterialWiltFragment" />
-        <activity android:name=".BacterialSoftRotFragment" />
-        <activity android:name=".LateBlightFragment" />
-        <activity android:name=".Anthracnose" />
-        <activity android:name=".BlackRootRot" />
-        <activity android:name=".LethalNecrosis" />
-        <activity android:name=".SouthernBlight" />
+        <activity android:name=".SmurtFragment"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".StemRustFragment"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".LeafRustFragment"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".YellowRustFragment"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".BacterialWiltFragment"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".BacterialSoftRotFragment"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".LateBlightFragment"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Anthracnose"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".BlackRootRot"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".LethalNecrosis"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".SouthernBlight"
+            android:theme="@style/AppTheme"/>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -85,11 +96,11 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
     </application>
 

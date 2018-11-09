@@ -3,8 +3,10 @@ package com.example.hp.kilimo_bora;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -13,7 +15,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class MaizeDiseases extends Activity {
+public class MaizeDiseases extends AppCompatActivity {
+    private ActionBar tool_bar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,13 @@ public class MaizeDiseases extends Activity {
         file.add("Leaf Mosaic");
         file.add("Smurt");
 
+
+
+        tool_bar=getSupportActionBar();
+        if(tool_bar!=null){
+            tool_bar.setDisplayHomeAsUpEnabled(true);
+            tool_bar.setDisplayShowHomeEnabled(true);
+        }
         ListView maizelistView = (ListView) findViewById(R.id.MaizeListview);
         ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,file);
         maizelistView.setAdapter(listAdapter);
@@ -61,6 +71,18 @@ public class MaizeDiseases extends Activity {
                 }
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                super.onBackPressed();
+                return true;
+            default:
+
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
 

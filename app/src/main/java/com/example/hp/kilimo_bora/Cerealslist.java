@@ -3,6 +3,10 @@ package com.example.hp.kilimo_bora;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -11,7 +15,10 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class Cerealslist extends Activity {
+
+public class Cerealslist extends AppCompatActivity {
+    private ActionBar tool_bar;
+
    /* private Spinner spinner1, spinner2;
     private Button btnSubmit;
 
@@ -37,7 +44,11 @@ public class Cerealslist extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cerealslist);
-
+        tool_bar=getSupportActionBar();
+        if(tool_bar!=null){
+            tool_bar.setDisplayHomeAsUpEnabled(true);
+            tool_bar.setDisplayShowHomeEnabled(true);
+        }
         final ArrayList<String> fileNames = new ArrayList<String>();
         fileNames.add("Maize");
         fileNames.add("Wheat");
@@ -76,6 +87,25 @@ public class Cerealslist extends Activity {
                 }
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                super.onBackPressed();
+                return true;
+            default:
+
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.activity3_menu,menu);
+        return true;
+//        return super.onCreateOptionsMenu(menu);
     }
 }
 

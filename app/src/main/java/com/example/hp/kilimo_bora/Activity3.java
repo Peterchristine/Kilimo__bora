@@ -4,9 +4,13 @@ import android.content.Intent;
 import
 android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Switch;
+import android.widget.Toast;
 
 public class Activity3 extends AppCompatActivity  {
   ImageView Cereals;
@@ -63,5 +67,25 @@ public class Activity3 extends AppCompatActivity  {
         });
 
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+//        return super.onOptionsItemSelected(item);
+
+
+        if(item.getItemId()==R.id.action_settings){
+            Toast.makeText(getApplicationContext(),"Settings",Toast.LENGTH_LONG).show();
+            return true;
+        }else{
+            return super.onOptionsItemSelected(item);
+        }
+        }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+       getMenuInflater().inflate(R.menu.activity3_menu,menu);
+       return true;
+//        return super.onCreateOptionsMenu(menu);
     }
 }
